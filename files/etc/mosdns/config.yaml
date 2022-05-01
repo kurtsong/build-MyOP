@@ -68,7 +68,7 @@ plugin:
   - tag: redis_cache
     type: cache
     args:
-      redis: 'redis://127.0.0.1:6379/0'
+      redis: 'redis://192.168.1.10:6379/0'
       #lazy_cache_ttl: 259200
 
   # 修改应答 ttl
