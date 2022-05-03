@@ -25,6 +25,8 @@ plugin:
     type: sequence
     args:
       exec:
+        - myhost
+        
         - if:
             - query_is_ad_domain
             - qtype65
@@ -132,5 +134,11 @@ plugin:
     type: query_matcher
     args:
       qtype: [65]
+      
+  - tag: myhost
+    type: hosts
+    args:
+      hosts:
+        - 'time.android.com 203.107.6.88'
 
 include: []
